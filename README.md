@@ -27,6 +27,11 @@ composer require avlyalin/laravel-sberbank-acquiring
 php artisan vendor:publish --provider="Avlyalin\SberbankAcquiring\Providers\AcquiringServiceProvider" --tag=config
 ```
 
+Опубликуйте файлы миграций:
+```
+php artisan vendor:publish --provider="Avlyalin\SberbankAcquiring\Providers\AcquiringServiceProvider" --tag=migrations
+```
+
 Запустите миграции:
 ```
 php artisan migrate
