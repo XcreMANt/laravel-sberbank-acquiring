@@ -84,8 +84,6 @@ class AcquiringServiceProvider extends ServiceProvider
 
         $this->registerBindings();
 
-        $this->registerEloquentFactories();
-
         $this->registerCommands();
     }
 
@@ -108,17 +106,6 @@ class AcquiringServiceProvider extends ServiceProvider
 				__DIR__.'/../../database/migrations/'.$migration['file'] => database_path("/migrations/{$timestamp}_create_{$tableName}_table.php"),
 			], 'migrations');
 		}
-    }
-
-    /**
-     * Регистрация фабрик
-     *
-     * @throws \Illuminate\Contracts\Container\BindingResolutionException
-     */
-    private function registerEloquentFactories()
-    {
-        $factory = $this->app->make(Factory::class);
-        $factory->load(base_path('vendor/avlyalin/laravel-sberbank-acquiring/database/factories'));
     }
 
     /**
