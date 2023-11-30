@@ -19,7 +19,7 @@
 ## Установка
 Добавьте пакет в зависимости:
 ```
-composer require avlyalin/laravel-sberbank-acquiring
+composer require xcremant/laravel-sberbank-acquiring
 ```
 
 Опубликуйте файл настроек:
