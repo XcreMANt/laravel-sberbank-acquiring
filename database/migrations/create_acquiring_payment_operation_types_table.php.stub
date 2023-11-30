@@ -49,6 +49,7 @@ class CreateAcquiringPaymentOperationTypesTable extends Migration
                 ['name' => 'Запрос проверки вовлечённости карты в 3DS', 'full_name' => 'Запрос проверки вовлечённости карты в 3DS'],
             ]
         );
+		
     }
 
     /**
